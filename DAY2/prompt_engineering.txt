@@ -1,0 +1,13 @@
+# Function to check palindrome
+def is_palindrome(num):
+    return str(num) == str(num)[::-1]
+
+# Taking input from user
+start = int(input("Enter start of range: "))
+end = int(input("Enter end of range: "))
+
+print("Palindrome numbers in the given range are:")
+
+for i in range(start, end + 1):
+    if is_palindrome(i):
+        print(i)
